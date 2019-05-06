@@ -27,14 +27,14 @@ TODO
 <a name="ucsum"></a>
 # 04. Use case summaries
 
-Actor | Use Case | Samenvatting
---- | --- | --
-Student | Product lenen | todo
-Student | Product reserveren | todo
-Student, Beheerder | Overzicht van producten inzien | todo
-Beheerder | Product toevoegen | todo
-Beheerder | Product verwijderen | todo
-Beheerder | Product aanpassen | todo
-Beheerder | Product aangeven als geleend | todo
-Beheerder | Product aangeven als beschikbaar | todo
-Beheerder | Lijst van te late inleveringen inzien | todo
+Actor               | Use Case                              | Samenvatting
+------------------- | ------------------------------------- | ----
+Student             | Product lenen                         | todo
+Student             | Product reserveren                    | todo
+Student, Beheerder  | Overzicht van producten inzien        | todo
+Beheerder           | Product toevoegen                     | todo
+Beheerder           | Product verwijderen                   | todo
+Beheerder           | Product aanpassen                     | todo
+Beheerder           | Product aangeven als geleend          | todo
+Beheerder           | Product aangeven als beschikbaar      | todo
+Beheerder           | Lijst van te late inleveringen inzien | todo
