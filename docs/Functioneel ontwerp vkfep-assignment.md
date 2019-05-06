@@ -4,27 +4,31 @@ Functioneel ontwerp
 
 # Inhoudsopgave
 
-1. [ Inleiding ](#01_1)
-2. [ State diagrams ](#02_1)
-3. [ State diagrams ](#03_1)
-4. [ State diagrams ](#04_1)
+1. [ Inleiding ](#inleiding)
+2. [ State diagrams ](#statediag)
+3. [ Use case diagram ](#ucdiag)
+4. [ Use case summaries ](#ucsum)
 
-<a name="01_1"></a>
+<a name="inleiding"></a>
 # 01. Inleiding
 
-sometext
+TODO
 
-<a name="02_1"></a>
+<a name="statediag"></a>
 # 02. State diagrams
 
+![State diagram Hardware uitleen app](./State_Diagram.png)
+
 sometext
 
-<a name="03_1"></a>
+<a name="ucdiag"></a>
 # 03. Use Case diagram
 
+![Use case diagram Hardware uitleen app](./Use_Case_Diagram.png)
+
 sometext
 
-<a name="04_1"></a>
+<a name="ucsum"></a>
 # 04. Use case summary
 
 sometext
