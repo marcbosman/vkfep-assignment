@@ -38,4 +38,5 @@ Beheerder           | Product aanpassen                     | De beheerder kan e
 Beheerder           | Product aangeven als geleend          | De beheerder kan een product aangeven als geleend door het __product__ te selecteren, hier een __student__ aan toe te wijzen en de __duur van de lening__ in te stellen (in).
 Beheerder           | Product aangeven als beschikbaar      | todo
 Beheerder           | Lijst van te late inleveringen inzien | Een product dat te laat is ingeleverd is gedefinieerd als een product met status "Uitgeleend", waarbij de uiterste inleverdatum kleiner (eerder) is als de huidige datum. De beheerder kan van het systeem een lijst opvragen met alle te laat ingeleverde producten. Hierbij geeft het systeem per product de uiterste inleverdatum en het emailadres van de student die het product heeft geleend.
+Beheerder           | Product aangeven als defect           | todo
 
