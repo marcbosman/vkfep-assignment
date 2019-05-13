@@ -12,20 +12,31 @@ Functioneel ontwerp
 <a name="inleiding"></a>
 # 01. Inleiding
 
-TODO
+Dit document beschrijft het Functioneel Ontwerp (FO) voor de Hardware Uitleen Applicatie (app) ontwikkeld voor de Hogeschool Utreccht (HU) voor het vak Front-End Development (VKFEP). Het is in drie maanden tijd ontwikkeld door de groep bestaande uit Luc van der Zandt, (Marc Bosman?) en Robin de Bondt.
+De opdracht was beschreven als het ontwikkelen van een simpel hardware uitleen systeem, waarbij studenten een stuk hardware van de school kunnen lenen, reserveren en inleveren, en de beheerders de hardware kunnen controleren op fouten zodat deze weer beschikbaar is voor de studenten om te lenen. De applicatie moet conform de opdracht een Javascript project zijn op basis van het Angular framework, waarbij de backend moet werken op door middel van Firebase.
 
 <a name="statediag"></a>
 # 02. State diagrams
+
+Het onderstaande diagram beschrijft de diverse statussen (states) waardoor een uitleenbaar hardware-item (product) verloopt als deze wordt geleend, gereserveerd, ingeleverd of gecontroleerd.
 
 ![State diagram Hardware uitleen app](./State_Diagram.png)
 
 <a name="ucdiag"></a>
 # 03. Use Case diagram
 
+Alle use cases die in het [ state diagram ](#statediag) aan het licht zijn gekomen zijn in het onderstaande use case diagram overzichtelijk neergezet. Voor deze applicatie worden twee actoren beschreven:
+
+- Student (de persoon die leent, reserveert en inlevert)
+- Beheerder (de persoon die de producten toevoegt, wijzigt, verwijdert, controleert, en te laat ingeleverde producten inziet)
+
 ![Use case diagram Hardware uitleen app](./Use_Case_Diagram.png)
 
 <a name="ucsum"></a>
 # 04. Use case summaries
+
+In de onderstaande tabel wordt de werking van elke reeds beschreven [ use case ](#ucdiag) uitgebreid verklaard. Hierbij worden variabelen die door de gebruiker worden ingevoerd gemarkeerd met __ingaand__(in) en door de gebruiker ingevoerde variabelen die het systeem uitvoert als __uitgaand__(out)
+
 
 Actor               | Use Case                              | Samenvatting
 ------------------- | ------------------------------------- | ----
