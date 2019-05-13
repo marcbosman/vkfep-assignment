@@ -20,7 +20,7 @@ De opdracht was beschreven als het ontwikkelen van een simpel hardware uitleen s
 
 Het onderstaande diagram beschrijft de diverse statussen (states) waardoor een uitleenbaar hardware-item (product) verloopt als deze wordt geleend, gereserveerd, ingeleverd of gecontroleerd.
 
-![State diagram Hardware uitleen app](./State_Diagram.png)
+![State diagram Hardware uitleen app](./Toestandsdiagram.png)
 
 <a name="ucdiag"></a>
 # 03. Use Case diagram
@@ -30,7 +30,7 @@ Alle use cases die in het [ state diagram ](#statediag) aan het licht zijn gekom
 - Student (de persoon die leent, reserveert en inlevert)
 - Beheerder (de persoon die de producten toevoegt, wijzigt, verwijdert, controleert, en te laat ingeleverde producten inziet)
 
-![Use case diagram Hardware uitleen app](./Use_Case_Diagram.png)
+![Use case diagram Hardware uitleen app](./UC_Diagram.png)
 
 <a name="ucsum"></a>
 # 04. Use case summaries
