@@ -1,0 +1,16 @@
+
+title : "Kennisoverdracht Redux"
+description : "Korte presentatie over Redux en het gebruik daarvan in Angular"
+
+theme: white
+# theme: black
+# theme: sky
+# theme: beige
+# theme: moon
+# theme: night
+# theme: simple
+
+layout : center
+
+footnote : "Kennisoverdracht Redux door Robin de Bondt, Luc van der Zandt en Marc Bosman"
+
