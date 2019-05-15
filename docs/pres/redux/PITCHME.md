@@ -5,13 +5,13 @@
 
 ### Robin de Bondt, Luc van der Zandt, Marc Bosman
 
---------------------------------------------------
+---
 
 ##                 Test slide
 
 Works very nicely, as intended
 
---------------------------------------------------
+---
 
 ##                 Code slide
 
