@@ -7,6 +7,6 @@ To present, visit `https://gitpitch.com/$user/$repo/$branch?p=$directory` or cli
 
 ### Kennisoverdracht redux
 
-- View presentation in [feature-redux_presentation](https://gitpitch.com/lucvanderzandt/vkfep-assignment/feature-redux_presentation?p=docs/pres/redux/#/)
+- View presentation in [feature-redux_presentation](https://gitpitch.com/lucvanderzandt/vkfep-assignment/feature-redux_presentation?p=/docs/pres/redux)
 
 - View presentation in [develop](https://gitpitch.com/lucvanderzandt/vkfep-assignment/develop?p=docs/pres/redux/)
