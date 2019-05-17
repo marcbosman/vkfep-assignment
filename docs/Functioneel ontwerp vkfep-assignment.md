@@ -1,10 +1,13 @@
 # Hardware uitleen app
 
-Functioneel ontwerp
+## Functioneel ontwerp
+
+### Door Luc van der Zandt, Marc Bostman en Robin de Bondt
 
 # Inhoudsopgave
 
 1. [ Inleiding ](#inleiding)
+2. [ Actoren ](#actoren)
 2. [ State diagrams ](#statediag)
 3. [ Use case diagram ](#ucdiag)
 4. [ Use case summaries ](#ucsum)
@@ -15,25 +18,47 @@ Functioneel ontwerp
 Dit document beschrijft het Functioneel Ontwerp (FO) voor de Hardware Uitleen Applicatie (app) ontwikkeld voor de Hogeschool Utreccht (HU) voor het vak Front-End Development (VKFEP). Het is in drie maanden tijd ontwikkeld door de groep bestaande uit Luc van der Zandt, (Marc Bosman?) en Robin de Bondt.
 De opdracht was beschreven als het ontwikkelen van een simpel hardware uitleen systeem, waarbij studenten een stuk hardware van de school kunnen lenen, reserveren en inleveren, en de beheerders de hardware kunnen controleren op fouten zodat deze weer beschikbaar is voor de studenten om te lenen. De applicatie moet conform de opdracht een Javascript project zijn op basis van het Angular framework, waarbij de backend moet werken op door middel van Firebase.
 
-<a name="statediag"></a>
-# 02. State diagrams
+<a name="actoren"></a>
+# 02. Actoren
 
-Het onderstaande diagram beschrijft de diverse statussen (states) waardoor een uitleenbaar hardware-item (product) verloopt als deze wordt geleend, gereserveerd, ingeleverd of gecontroleerd.
-
-![State diagram Hardware uitleen app](./Toestandsdiagram.png)
-
-<a name="ucdiag"></a>
-# 03. Use Case diagram
-
-Alle use cases die in het [ state diagram ](#statediag) aan het licht zijn gekomen zijn in het onderstaande use case diagram overzichtelijk neergezet. Voor deze applicatie worden twee actoren beschreven:
+Voor deze applicatie worden twee actoren beschreven:
 
 - Student (de persoon die leent, reserveert en inlevert)
 - Beheerder (de persoon die de producten toevoegt, wijzigt, verwijdert, controleert, en te laat ingeleverde producten inziet)
 
+<a name="statediag"></a>
+# 03. State diagrams
+
+Het object "product" kan zich in een aantal "staten" (states) bevinden. Het door de actors uitvoeren van use cases beïnvloedt vervolgens de status van het product.
+Het onderstaande diagram beschrijft de diverse staten waardoor een uitleenbaar hardware-item (product) verloopt als deze wordt geleend, gereserveerd, ingeleverd of gecontroleerd.
+
+![State diagram Hardware uitleen app](./Toestandsdiagram.png)
+
+Uit dit diagram zijn de volgende use cases afgeleid.
+
+### Actor: Student/Beheerder
+- Overzicht van producten inzien
+### Actor: Student
+- Product reserveren
+- Product inleveren
+### Actor: Beheerder
+- Product CRUD (product toevoegen, wijzigen, afschrijven)
+- Product aangeven als gereserveerd
+- Product aangeven als uitgeleend
+- Product aangeven als beschikbaar
+- Product controleren op defecten
+- Overzicht van producten inzien
+- Overzicht van te late inleveringen inzien
+
+<a name="ucdiag"></a>
+# 04. Use Case diagram
+
+Alle use cases die in het [ state diagram ](#statediag) aan het licht zijn gekomen zijn in het onderstaande use case diagram overzichtelijk neergezet.
+
 ![Use case diagram Hardware uitleen app](./UC_Diagram.png)
 
 <a name="ucsum"></a>
-# 04. Use case summaries
+# 05. Use case summaries
 
 In de onderstaande tabel wordt de werking van elke reeds beschreven [ use case ](#ucdiag) uitgebreid verklaard. Hierbij worden variabelen die door de gebruiker worden ingevoerd gemarkeerd met __ingaand__(in) en door de gebruiker ingevoerde variabelen die het systeem uitvoert als __uitgaand__(out)
 
