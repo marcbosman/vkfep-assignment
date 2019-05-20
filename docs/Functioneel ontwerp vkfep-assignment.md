@@ -5,27 +5,28 @@ Functioneel ontwerp
 # Inhoudsopgave
 
 1. [ Inleiding ](#inleiding)
-2. [ State diagrams ](#statediag)
-3. [ Use case diagram ](#ucdiag)
-4. [ Use case summaries ](#ucsum)
+2. [ Toestandsdiagram ](#statediag)
+3. [ Use Case Diagram ](#ucdiag)
+4. [ Use case Samenvattingen ](#ucsum)
+5. [ Technische Eisen ](#tech-eisen)
 
 <a name="inleiding"></a>
 # 01. Inleiding
 
-Dit document beschrijft het Functioneel Ontwerp (FO) voor de Hardware Uitleen Applicatie (app) ontwikkeld voor de Hogeschool Utreccht (HU) voor het vak Front-End Development (VKFEP). Het is in drie maanden tijd ontwikkeld door de groep bestaande uit Luc van der Zandt, (Marc Bosman?) en Robin de Bondt.
+Dit document beschrijft het Functioneel Ontwerp (FO) voor de Hardware Uitleen Applicatie (app) ontwikkeld voor de Hogeschool Utreccht (HU) voor het vak Front-End Development (VKFEP). Het is in drie maanden tijd ontwikkeld door de groep bestaande uit Luc van der Zandt, Marc Bosman en Robin de Bondt.
 De opdracht was beschreven als het ontwikkelen van een simpel hardware uitleen systeem, waarbij studenten een stuk hardware van de school kunnen lenen, reserveren en inleveren, en de beheerders de hardware kunnen controleren op fouten zodat deze weer beschikbaar is voor de studenten om te lenen. De applicatie moet conform de opdracht een Javascript project zijn op basis van het Angular framework, waarbij de backend moet werken op door middel van Firebase.
 
 <a name="statediag"></a>
-# 02. State diagrams
+# 02. Toestandsdiagram
 
-Het onderstaande diagram beschrijft de diverse statussen (states) waardoor een uitleenbaar hardware-item (product) verloopt als deze wordt geleend, gereserveerd, ingeleverd of gecontroleerd.
+Het onderstaande diagram beschrijft de diverse toestanden (states) waardoor een uitleenbaar hardware-item (product) verloopt als deze wordt geleend, gereserveerd, ingeleverd of gecontroleerd.
 
 ![State diagram Hardware uitleen app](./Toestandsdiagram.png)
 
 <a name="ucdiag"></a>
-# 03. Use Case diagram
+# 03. Use Case Diagram
 
-Alle use cases die in het [ state diagram ](#statediag) aan het licht zijn gekomen zijn in het onderstaande use case diagram overzichtelijk neergezet. Voor deze applicatie worden twee actoren beschreven:
+Alle use cases die in het [ toestandsdiagram ](#statediag) aan het licht zijn gekomen zijn in het onderstaande use case diagram overzichtelijk neergezet. Voor deze applicatie worden twee actoren beschreven:
 
 - Student (de persoon die leent, reserveert en inlevert)
 - Beheerder (de persoon die de producten toevoegt, wijzigt, verwijdert, controleert, en te laat ingeleverde producten inziet)
@@ -33,7 +34,7 @@ Alle use cases die in het [ state diagram ](#statediag) aan het licht zijn gekom
 ![Use case diagram Hardware uitleen app](./UC_Diagram.png)
 
 <a name="ucsum"></a>
-# 04. Use case summaries
+# 04. Use Case Samenvattingen
 
 In de onderstaande tabel wordt de werking van elke reeds beschreven [ use case ](#ucdiag) uitgebreid verklaard. Hierbij worden variabelen die door de gebruiker worden ingevoerd gemarkeerd met __ingaand__(in) en door de gebruiker ingevoerde variabelen die het systeem uitvoert als __uitgaand__(out)
 
@@ -51,3 +52,16 @@ Beheerder           | Product aangeven als beschikbaar      | De beheerder kan e
 Beheerder           | Lijst van te late inleveringen inzien | Een product dat te laat is ingeleverd is gedefinieerd als een product met status "Uitgeleend", waarbij de uiterste inleverdatum kleiner (eerder) is als de huidige datum. De beheerder kan van het systeem een lijst opvragen met alle te laat ingeleverde producten. Hierbij geeft het systeem per product de uiterste inleverdatum en het emailadres van de student die het product heeft geleend.
 Beheerder           | Product aangeven als defect           | Als een beheerder een defect constanteert met een product, dan behoort deze het product te markeren als defect. Het systeem geeft het product dan de status "Defect" en meldt hierbij de __defectreden__(in). het product kan dan niet meer worden uitgeleend. Een beheerder kan, na het oplossen van het defect of vervangen van het product het product ook weer aangeven als beschikbaar. Het systeem geeft het product dan wederom de status "Beschikbaar".
 
+<a name="tech-eisen"></a>
+# 05. Technische Eisen
+
+De applicatie wordt gerealiseerd als Angular<sup>[1](#angular)</sup> applicatie die gebruikt maakt van een Firebase<sup>[2](#firebase)</sup> database voor opslag van data.
+
+De code wordt beheerd en opgeslagen in deze GitHub repository. Code wordt geschreven in feature branches, welke samengevoegd worden in de development branch en daar worden getest alvorens in de master branch te belanden.
+
+<a name="bronnen"></a>
+# 06. Bronnen
+
+<sup name="angular">[1]</sup> Google, Inc. (2019). *Angular*. Opgehaald op 20 mei 2019 van angular.io: https://angular.io/.
+
+<sup name="firebase">[2]</sup> Google, Inc. (2019). *Firebase*. Opgehaald op 20 mei 2019 van firebase.google.com: https://firebase.google.com/.
