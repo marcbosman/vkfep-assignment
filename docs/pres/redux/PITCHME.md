@@ -7,13 +7,30 @@
 
 ---
 
-##                 Test slide
+##               1. Wat is redux?
 
-Works very nicely, as intended
+![Redux logo](./img/redux-logo-landscape.png)
 
 ---
 
-##                 Code slide
+##               1. Wat is redux?
+
+- Een state container
+- Gebaseerd op Flux van Facebook
+- Implementeerbaar in elke js app/framework
+
+---
+
+##               2. Implementatie
+
+`npm install redux`
+`npm install @angular-redux/store`
+
+---
+
+##               2. Implementatie
+
+![Redux implementation diagram](./img/redux-diagram.png)
 
 ```js
 
@@ -22,3 +39,9 @@ while (true) {
 }
 
 ```
+
+- Wanneer is redux nodig?
+- Verschillende manieren om redux te implementeren (alleen core, NGRX)
+- Project structuur
+- Core principle redux
+- Manieren om redux te gebruiken
