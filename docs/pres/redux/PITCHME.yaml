@@ -10,7 +10,7 @@ theme: white
 # theme: night
 # theme: simple
 
-layout : center
+layout : top
 
 footnote : "Kennisoverdracht Redux door Robin de Bondt, Luc van der Zandt en Marc Bosman"
 

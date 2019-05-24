@@ -7,17 +7,17 @@
 
 ---
 
+@snap[midpoint span-40]
+
 ##               1. Wat is redux?
 
 ![Redux logo](docs/pres/redux/img/redux-logo-landscape.png)
 
----
-
-##               1. Wat is redux?
-
 - Een state container
 - Gebaseerd op Flux van Facebook
 - Implementeerbaar in elke js app/framework
+
+@snapend
 
 ---
 
@@ -30,7 +30,13 @@
 
 ##               2. Implementatie
 
+@snap[midpoint span-40]
+
 ![Redux implementation diagram](docs/pres/redux/img/redux-diagram.png)
+
+@snapend
+
+---
 
 ```js
 
