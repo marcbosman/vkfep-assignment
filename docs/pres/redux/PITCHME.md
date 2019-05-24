@@ -7,28 +7,38 @@
 
 ---
 
-@snap[midpoint span-40]
+@snap[north span-40]
 
 ##               1. Wat is redux?
 
 ![Redux logo](docs/pres/redux/img/redux-logo-landscape.png)
 
+@snapend
+@snap[south]
+
 - Een state container
+
 - Gebaseerd op Flux van Facebook
+
 - Implementeerbaar in elke js app/framework
 
 @snapend
 
+Note:
+
+- asd
+- asd
+
 ---
 
-##               2. Implementatie
+##               2. Installatie
 
 `npm install redux`
 `npm install @angular-redux/store`
 
 ---
 
-##               2. Implementatie
+##               3. Implementatie
 
 @snap[midpoint span-40]
 
@@ -37,6 +47,8 @@
 @snapend
 
 ---
+
+##
 
 ```js
 
