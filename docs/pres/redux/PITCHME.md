@@ -9,7 +9,7 @@
 
 ##               1. Wat is redux?
 
-![Redux logo](./img/redux-logo-landscape.png)
+![Redux logo](docs/pres/redux/img/redux-logo-landscape.png)
 
 ---
 
@@ -30,7 +30,7 @@
 
 ##               2. Implementatie
 
-![Redux implementation diagram](./img/redux-diagram.png)
+![Redux implementation diagram](docs/pres/redux/img/redux-diagram.png)
 
 ```js
 
